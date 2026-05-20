@@ -1,10 +1,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-from sklearn.svm import SVC
-from sklearn.preprocessing import StandardScaler
-
-# Load model and scaler
 model = pickle.load(open('model.pkl', 'rb'))
 scaler = pickle.load(open('scaler.pkl', 'rb'))
 
